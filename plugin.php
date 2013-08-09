@@ -65,6 +65,8 @@ class Per_Post_CSS {
 		if ( is_admin() ) { // note the use of is_admin() to double check that this is happening in the admin
 
 			$config = array(
+				'slug' => plugin_basename( __FILE__ ),
+				'proper_folder_name' => dirname( plugin_basename( __FILE__ ) ),
 				'api_url' => 'https://api.github.com/repos/eclipseshadow/wordpress-per-post-css',
 				'raw_url' => 'https://raw.github.com/eclipseshadow/wordpress-per-post-css/master',
 				'github_url' => 'https://github.com/eclipseshadow/wordpress-per-post-css',
