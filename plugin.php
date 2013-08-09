@@ -60,7 +60,7 @@ class Per_Post_CSS {
 
 		require_once 'lib/updater.php';
 
-		define( 'WP_GITHUB_FORCE_UPDATE', true );
+		define( 'WP_GITHUB_FORCE_UPDATE', false );
 
 		if ( is_admin() ) { // note the use of is_admin() to double check that this is happening in the admin
 
