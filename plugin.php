@@ -60,7 +60,7 @@ class Per_Post_CSS {
 
 		require_once 'lib/updater.php';
 
-		define( 'WP_GITHUB_FORCE_UPDATE', false );
+		define( 'WP_GITHUB_FORCE_UPDATE', true );
 
 		if ( is_admin() ) { // note the use of is_admin() to double check that this is happening in the admin
 
@@ -78,7 +78,7 @@ class Per_Post_CSS {
 				'access_token' => '',
 			);
 
-			new WP_GitHub_Updater( $config );
+			new Proxima_WP_Plugin_Updater( $config );
 
 		}
 
