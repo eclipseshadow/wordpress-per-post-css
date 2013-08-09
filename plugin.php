@@ -3,7 +3,7 @@
 Plugin Name: Per Post CSS
 Plugin URI:
 Description: Allows custom CSS to be added to any post (CPT also supported)
-Version: 0.01a
+Version: 0.02
 Author: Zach Lanich
 Author URI: https://www.ZachLanich.com
 License: Undecided
