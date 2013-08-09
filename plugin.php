@@ -3,7 +3,7 @@
 Plugin Name: Per Post CSS
 Plugin URI: https://github.com/eclipseshadow/wordpress-per-post-css/
 Description: Allows custom CSS to be added to any post (CPT also supported)
-Version: 0.2
+Version: 0.2.1
 Author: Zach Lanich
 Author URI: https://www.ZachLanich.com
 License: Undecided

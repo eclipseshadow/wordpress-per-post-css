@@ -86,8 +86,6 @@ class WP_GitHub_Updater {
 
 		$this->set_defaults();
 
-		var_dump($this->config['new_version'], $this->config['version']);
-
 		add_filter( 'pre_set_site_transient_update_plugins', array( $this, 'api_check' ) );
 
 		// Hook into the plugin details screen
