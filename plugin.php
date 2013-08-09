@@ -78,7 +78,7 @@ class Per_Post_CSS {
 				'access_token' => '',
 			);
 
-			new Proxima_WP_Plugin_Updater( $config );
+			new WP_GitHub_Updater( $config );
 
 		}
 
