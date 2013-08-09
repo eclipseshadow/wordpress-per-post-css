@@ -54,6 +54,34 @@ class Per_Post_CSS {
 
 	}
 
+	private function check_for_updates() {
+
+		include_once 'lib/updater.php';
+
+		define( 'WP_GITHUB_FORCE_UPDATE', true );
+
+		if ( is_admin() ) { // note the use of is_admin() to double check that this is happening in the admin
+
+			$config = array(
+				'slug' => basename( dirname( __FILE__ ) ),
+				'proper_folder_name' => basename( dirname( __FILE__ ) ),
+				'api_url' => 'https://api.github.com/repos/eclipseshadow/wordpress-per-post-css',
+				'raw_url' => 'https://raw.github.com/eclipseshadow/wordpress-per-post-css/master',
+				'github_url' => 'https://github.com/eclipseshadow/wordpress-per-post-css',
+				'zip_url' => 'https://github.com/eclipseshadow/wordpress-per-post-css/archive/master.zip',
+				'sslverify' => true,
+				'requires' => '3.0',
+				'tested' => '3.6',
+				'readme' => 'README.md',
+				'access_token' => '',
+			);
+
+			new WP_GitHub_Updater( $config );
+
+		}
+
+	}
+
 	public function _load_editor_scripts() {
 
 		// Check to see if current post type is enabled
