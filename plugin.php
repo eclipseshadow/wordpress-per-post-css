@@ -3,7 +3,7 @@
 Plugin Name: Per Post CSS
 Plugin URI:
 Description: Allows custom CSS to be added to any post (CPT also supported)
-Version: 0.03
+Version: 0.01
 Author: Zach Lanich
 Author URI: https://www.ZachLanich.com
 License: Undecided
@@ -58,7 +58,7 @@ class Per_Post_CSS {
 
 	private function check_for_updates() {
 
-		include_once 'lib/updater.php';
+		require_once 'lib/updater.php';
 
 		define( 'WP_GITHUB_FORCE_UPDATE', true );
 
@@ -71,7 +71,7 @@ class Per_Post_CSS {
 				'raw_url' => 'https://raw.github.com/eclipseshadow/wordpress-per-post-css/master',
 				'github_url' => 'https://github.com/eclipseshadow/wordpress-per-post-css',
 				'zip_url' => 'https://github.com/eclipseshadow/wordpress-per-post-css/archive/master.zip',
-				'sslverify' => true,
+				'sslverify' => false,
 				'requires' => '3.0',
 				'tested' => '3.6',
 				'readme' => 'README.md',
