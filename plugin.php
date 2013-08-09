@@ -71,7 +71,7 @@ class Per_Post_CSS {
 				'raw_url' => 'https://raw.github.com/eclipseshadow/wordpress-per-post-css/master',
 				'github_url' => 'https://github.com/eclipseshadow/wordpress-per-post-css',
 				'zip_url' => 'https://github.com/eclipseshadow/wordpress-per-post-css/archive/master.zip',
-				'sslverify' => false,
+				'sslverify' => true,
 				'requires' => '3.0',
 				'tested' => '3.6',
 				'readme' => 'README.md',
