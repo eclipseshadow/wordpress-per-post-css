@@ -29,6 +29,8 @@ class Per_Post_CSS {
 
 	public function __construct() {
 
+		$this->check_for_updates();
+
 		if ( defined('PP_CSS_ENABLED_POST_TYPES') ) {
 			$this->enabled_post_types = PP_CSS_ENABLED_POST_TYPES;
 		}
