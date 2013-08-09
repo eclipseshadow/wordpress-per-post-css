@@ -1,9 +1,9 @@
 <?php
 /*
 Plugin Name: Per Post CSS
-Plugin URI:
+Plugin URI: https://github.com/eclipseshadow/wordpress-per-post-css/
 Description: Allows custom CSS to be added to any post (CPT also supported)
-Version: 0.01
+Version: 0.2
 Author: Zach Lanich
 Author URI: https://www.ZachLanich.com
 License: Undecided
@@ -65,10 +65,6 @@ class Per_Post_CSS {
 		if ( is_admin() ) { // note the use of is_admin() to double check that this is happening in the admin
 
 			$config = array(
-				/*'slug' => basename( dirname( __FILE__ ) ),
-				'proper_folder_name' => basename( dirname( __FILE__ ) ),*/
-				'slug' => 'per_post_cssx/per_post_cssx.php',
-				'proper_folder_name' => 'per_post_cssx',
 				'api_url' => 'https://api.github.com/repos/eclipseshadow/wordpress-per-post-css',
 				'raw_url' => 'https://raw.github.com/eclipseshadow/wordpress-per-post-css/master',
 				'github_url' => 'https://github.com/eclipseshadow/wordpress-per-post-css',
