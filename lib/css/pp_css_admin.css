@@ -1,0 +1,22 @@
+/* Metabox */
+#poststuff #pp_css_editor_box .inside {
+	margin: 5px;
+	padding: 0;
+}
+
+/* Editor */
+#pp_css_editor {
+	height: 300px;
+}
+
+/* Misc */
+.metabox_info {
+	font-style: italic;
+	color: #21759B;
+}
+
+.metabox_info_emphasis {
+	color: #A5A5A5;
+	padding: 5px;
+	display: block;
+}
